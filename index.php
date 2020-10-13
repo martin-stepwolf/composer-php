@@ -83,4 +83,24 @@ echo "<hr>";
 $text = "PHP es UN LENGUAJE, año 2020, programación";
 echo strtoupper($text); //monobye
 echo "<br>";
-echo mb_strtoupper($text);//multibyte
+echo mb_strtoupper($text); //multibyte
+
+echo "<hr>";
+#Regula Expressions
+/*
+/:  container
+^: init
+$: final
+-: range
+[]: pattern
+{}: condition
+*/
+
+$password = '12345';
+$password1 = '123456a';
+$password2 = '123456';
+echo preg_match('/^[0-9]{6,9}$/', $password);
+echo "<br>";
+var_dump(preg_match('/^[0-9]{6,9}$/', $password1));
+echo "<br>";
+var_dump((bool)preg_match('/^[0-9]{6,9}$/', $password2));
