@@ -1,0 +1,10 @@
+Comands:
+
+>composer install
+>php -S localhost:8080 
+
+Lifecycle
+1.- All the project live in src.
+2.- The folder src is loaded by composer.json.
+3.- Composer load all the dependences and configuration.
+4.- The autoload is ready.
