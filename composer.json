@@ -3,6 +3,10 @@
     "description": "Example with composer",
     "type": "project",
     "autoload": {
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
         "psr-4": {
             "Text\\": "src/"
         },

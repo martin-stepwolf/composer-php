@@ -1,8 +1,12 @@
 Comands:
 
->composer init
->composer install
->php -S localhost:8080 
+>composer init // show all the configuration about composer.json
+>composer install // install the packages
+>php -S localhost:8080 // run a server with php
+>composer dump //add composer to the project
+>composer // show all the possible options
+>composer self-update // updates composer
+>composer update // updates the dependences
 
 Lifecycle
 1.- All the project live in src.
@@ -13,3 +17,5 @@ Lifecycle
 All the packages could be found in https://packagist.org/ 
 When a package is required, this could be in production or in development.
 For example testunit is in development and carbon(for the time) is in production.
+
+composer.lock saves more details about the dependences in composer.json
