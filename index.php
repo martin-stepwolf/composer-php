@@ -109,3 +109,37 @@ echo '<hr>Test<br>';
 var_dump(App\Validate::email('test@gmail.com'));
 var_dump(App\Validate::url('https://martin.com'));
 var_dump(App\Validate::password('123456'));
+
+echo "<hr>Arguments<br>";
+
+#Value
+function greet($name)
+{
+    return "Hi, $name <br>";
+    /**
+     * return the value and stops the function
+     * exit(); stop the system
+     */
+}
+echo greet('Martin');
+
+#References '&'
+$course = 'PHP';
+function path(&$course)
+{
+    $course = 'Laravel';
+    echo $course; //Laravel
+}
+path($course);
+echo "<br>";
+echo $course; //Laravel
+echo "<br>";
+
+#Default
+function greet1($name = 'Martin')
+{
+    return "Hi, $name";
+}
+echo greet1();
+echo "<br>";
+echo greet1('Carlos');
