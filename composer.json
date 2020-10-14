@@ -8,7 +8,8 @@
             "database/factories"
         ],
         "psr-4": {
-            "Text\\": "src/"
+            "Text\\": "src/text/",
+            "App\\": "src/"
         },
         "files": [
             "src/helpers.php "

@@ -104,3 +104,8 @@ echo "<br>";
 var_dump(preg_match('/^[0-9]{6,9}$/', $password1));
 echo "<br>";
 var_dump((bool)preg_match('/^[0-9]{6,9}$/', $password2));
+
+echo '<hr>Test<br>';
+var_dump(App\Validate::email('test@gmail.com'));
+var_dump(App\Validate::url('https://martin.com'));
+var_dump(App\Validate::password('123456'));
