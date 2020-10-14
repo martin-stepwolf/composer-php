@@ -9,10 +9,24 @@ echo lower('I am a project with \"composer(not frameworks).\"<br>');
 $nick_name = 'martin-stepwolf';
 $my_skills = [
     'languages' => [
-        'PHP',
-        'JavaScript'
+        10 => 'PHP',
+        'JavaScript', // it has the key 11
+        'framework' => 'Laravel'
     ]
 ];
+// function printer($element, $key)
+// {
+//     echo $element . ": $key <br>";
+// }
+// array_walk($my_skills['languages'], 'printer');
+
+/*	
+	array_key_exists('frontend', $courses);
+	in_array('javascript', $courses);
+	array_keys($courses);
+	array_values($courses);
+*/
+
 class User
 {
     public $name = 'Martín';
@@ -20,7 +34,7 @@ class User
 $user = new User();
 
 echo "Project for practicing 
-{$my_skills['languages'][0]} 
+{$my_skills['languages'][10]} 
 by $user->name ($nick_name)<hr>";
 
 // data format
@@ -41,6 +55,41 @@ var_dump($tags);
 
 echo "<br>";
 $courses = ['ruby', 'php', 'python'];
+sort($courses);
+# Short by name
+//rsort($courses);
+# Sort by key
+// ksort($course);
+# delete a alement
+// var_dump(array_slice($course, 1));
+# split an array in array, like pagination from database
+// array_chunk($courses_chunk, 2);
+# show the first element and delete it
+// array_shift() 
+# show the last element and delete it
+// array_pop()
+# add an element in the fisrt space
+// array_unshift()
+# add an element in the final space
+// array_push()
+# switch the value for the keys
+// array_flip()
+# compare arrays
+// var_dump(array_diff($wishes, $courses)); 
+// it shows the elements in wishes that courses does not have
+# compare arrays (with keys)
+// array_diff_assoc()
+
+// var_dump($frontent + $backend);
+// whit this function the index are remplaced
+# merge arrays
+// array_merge($frontent1, $backend1)
+# merge arrays, if there are elements with
+# the same key, the values become an array
+// array_merge_recursive($frontend2, $backend2)
+# combine arrays, one has the keys and the second one the values
+// array_combine($courses, $categories)
+
 echo implode(' - ', $courses);
 
 echo "<br>";
@@ -143,3 +192,27 @@ function greet1($name = 'Martin')
 echo greet1();
 echo "<br>";
 echo greet1('Carlos');
+
+echo "<hr>Closure<br>";
+// anonymous function
+// $greet = function ($name) {
+//     return "<h1>Hi, $name</h1>";
+// };
+// echo greet('Martin');
+
+function greet2(Closure $lang, $name)
+{
+    return $lang($name);
+}
+
+$es = function ($name) {
+    return "Hola, $name";
+};
+
+$en = function ($name) {
+    return "Hello, $name";
+};
+
+echo greet2($es, 'Martin');
+echo "<br>";
+echo greet2($en, 'Martin');
