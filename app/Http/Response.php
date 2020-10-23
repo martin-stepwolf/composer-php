@@ -20,8 +20,9 @@ class Response
     {
         $view = $this->getView();
 
-        $content = file_get_contents(__DIR__ . "/../../views/$view.php");
+        $content = file_get_contents(viewPath($view));
+        // content is used in the view layout
 
-        require __DIR__ . "/../../views/layout.php";
+        require viewPath('layout');
     }
 }
