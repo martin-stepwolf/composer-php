@@ -9,10 +9,10 @@
         ],
         "psr-4": {
             "Text\\": "src/text/",
-            "App\\": "src/"
+            "App\\": "app/"
         },
         "files": [
-            "src/helpers.php "
+            "app/helpers.php "
         ]
     },
     "require-dev": {
