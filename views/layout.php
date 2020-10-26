@@ -12,12 +12,18 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
         <div class="container">
             <a href="/" class="navbar-brand h1">Home</a>
+            <a href="/fundamentals" class="navbar-brand h1">Fundamentals</a>
+            <a href="/arrays" class="navbar-brand h1">Arrays</a>
+            <a href="/validations" class="navbar-brand h1">Validations</a>
+            <a href="/oop" class="navbar-brand h1">OOP</a>
         </div>
     </nav>
 
     <div class="container">
         <div class="row">
-            <?php echo $content; ?>
+            <div class="col-8">
+                <?php echo $content; ?>
+            </div>
         </div>
     </div>
 </body>
