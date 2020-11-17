@@ -16,6 +16,8 @@
             <a href="/arrays" class="navbar-brand h1">Arrays</a>
             <a href="/validations" class="navbar-brand h1">Validations</a>
             <a href="/oop" class="navbar-brand h1">OOP</a>
+            <a href="/magicmethods" class="navbar-brand h1">Magic Methods</a>
+            <a href="/interfaces" class="navbar-brand h1">Interfaces</a>
         </div>
     </nav>
 
