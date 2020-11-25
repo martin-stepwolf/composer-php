@@ -19,3 +19,14 @@ When a package is required, this could be in production or in development.
 For example testunit is in development and carbon(for the time) is in production.
 
 composer.lock saves more details about the dependences in composer.json
+
+
+PHP-FIG
+PSR-0: Autoloading
+PSR-1: Coding Style
+PSR-2: Cdoing Style
+PSR-3: Logger Interface
+PSR-4: Autoloading
+PSR-6: Caching Interface
+PSR-7: HTTP Messages
+Composer uses PSR-4: autoloading

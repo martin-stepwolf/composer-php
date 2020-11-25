@@ -1,5 +1,5 @@
 {
-    "name": "martin-stepwolf/text",
+    "name": "martin-stepwolf/composer-php",
     "description": "Example with composer",
     "type": "project",
     "autoload": {
